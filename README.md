@@ -29,10 +29,10 @@ dotnet run
 You should have something like this:
 ````
 HTTPS
-download time using HttpClient 2176 ms
+download time using HttpClient 2238 ms
 sha1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 HTTP
-download time using HttpClient 2039 ms
+download time using HttpClient 1581 ms
 sha1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 ````
 
@@ -40,18 +40,19 @@ Then you can open the Unity project in the Unity directory. By opening the scene
 
 ````
 HTTPS
-Download time using HttpClient 30298 ms
+Download time using HttpClient 32261 ms
 SHA1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 HTTP
-Download time using HttpClient 29949 ms
+Download time using HttpClient 5120 ms
 SHA1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 HTTPS
-Download time using UnityWebRequest 6274 ms
+Download time using UnityWebRequest 4408 ms
 SHA1 using UnityWebRequest 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 HTTP
-Download time using UnityWebRequest 5386 ms
+Download time using UnityWebRequest 2548 ms
 SHA1 using UnityWebRequest 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 ````
+
 
 ## Performance analysis
 
@@ -59,3 +60,4 @@ The previous logs are output from the programs on this repository run on the sam
 
 * UnityWebRequest is 2x slower than HttpClient running on .Net Core.
 * HttpClient running in Unity is about 10x slower than the equivalent version running on .Net Core.
+* Performance varies widly between using HTTPS and HTTP.
