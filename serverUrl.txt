@@ -1,0 +1,2 @@
+https://localhost:7288/httpTest
+http://localhost:5286/httpTest

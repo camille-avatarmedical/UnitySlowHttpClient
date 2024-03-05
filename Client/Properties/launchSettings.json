@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ASPNetDownloader": {
+      "commandName": "Project",
+      "workingDirectory": "./"
+    }
+  }
+}
