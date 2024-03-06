@@ -21,7 +21,7 @@ public static class Program
 		var response2 = await httpClient2.GetAsync(url);
 		var byteArray2 = await response2.Content.ReadAsByteArrayAsync();
 		Console.WriteLine($"download time using HttpClient {stopwatch.ElapsedMilliseconds} ms");
-		Console.WriteLine($"sha1 using HttpClient {GetHashSHA1(byteArray2)}");
+		Console.WriteLine($"SHA1 using HttpClient {GetHashSHA1(byteArray2)}");
 	}
 
 	public static string GetHashSHA1(byte[] data)

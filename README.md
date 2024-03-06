@@ -5,7 +5,7 @@ This project is a reproduction project to highlight a performance issue in the H
 ## Requirements
 To have a working environment you need:
 * Unity 2022.3.4f1
-* A .Net core development environment or Visual Studio 22
+* A .Net core development environment or Visual Studio 2022
 
 ## Setup
 First you need to create a binary file and place it in Server/binary.content. We advise a file between 300 and 400MB. It is better is content is random.
@@ -30,10 +30,10 @@ You should have something like this:
 ````
 HTTPS
 download time using HttpClient 2238 ms
-sha1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
+SHA1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 HTTP
 download time using HttpClient 1581 ms
-sha1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
+SHA1 using HttpClient 990B3A5A6F1C9ACC333E305A0E879125A9B699BD
 ````
 
 Then you can open the Unity project in the Unity directory. By opening the scene named MainScene and playing it you should have something like this appear on the logs:
